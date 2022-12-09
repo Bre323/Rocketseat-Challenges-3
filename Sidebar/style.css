@@ -30,7 +30,6 @@ nav {
 .nav-menu { 
     width: 100%;
     margin: 20px 0;
-    background-color: aqua;
 }
 
 .nav-header {
@@ -51,7 +50,7 @@ nav {
 .nav-item {
     display: flex;
     align-items: center;
-    margin: 0 10px 15px;
+    margin: 0 10px 20px;
     padding: 10px;
 }
 
@@ -66,6 +65,7 @@ nav {
     background-color: var(--light-green);
     padding: 0 20px 0 10px;
     height: 10vh;
+    width: 100%;
 }
 
 .user-info {
