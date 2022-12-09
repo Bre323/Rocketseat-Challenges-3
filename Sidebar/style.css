@@ -45,6 +45,11 @@ nav {
 .nav-header button {
     background-color: transparent;
     border: none;
+    transition: 0.3s;
+}
+
+.nav-header button:active {
+    background-color: var(--light-green);
 }
 
 .nav-item {
