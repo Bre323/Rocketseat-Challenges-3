@@ -25,6 +25,7 @@ nav {
     align-items: center;
     background-color: var(--green);
     width: 5vw;
+    transition: 0.3s;
 }
 
 .nav-menu { 
@@ -45,11 +46,6 @@ nav {
 .nav-header button {
     background-color: transparent;
     border: none;
-    transition: 0.3s;
-}
-
-.nav-header button:active {
-    background-color: var(--light-green);
 }
 
 .nav-item {
@@ -57,6 +53,16 @@ nav {
     align-items: center;
     margin: 0 10px 20px;
     padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+
+.nav-item:hover {
+    background-color: var(--light-green);
+}
+
+.nav-item img {
+    margin-right: 15px;
 }
 
 .item-text {
@@ -74,19 +80,14 @@ nav {
 }
 
 .user-info {
-    display: flex;
+    display: none;
     color: var(--text-color);
 }
 
 .user-info img {
-    display: none;
     width: 40px;
     height: 40px;
     border-radius: 25px;
-}
-
-.user-text {
-    display: none;
 }
 
 .user-info p:first-child {
@@ -106,4 +107,22 @@ main {
 main h1 {
     font-size: 24px;
     color: var(--text-color);
+}
+
+
+/* Sidebar expandido */
+
+.add-nav {
+    width: 20vw;
+    transition: 0.3s;
+}
+
+.add-element {
+    display: block;
+}
+
+.add-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 }
