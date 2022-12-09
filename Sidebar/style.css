@@ -8,7 +8,7 @@
     --body-bg-color: #dce4e3;
     --green: #18c29c;
     --light-green: #8ed7c6;
-      --light-grey: #dce4e3;
+    --light-grey: #dce4e3;
     --text-color: #084236;
 }
 
@@ -24,26 +24,39 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: var(--green);
-    width: 15vw; 
+    width: 5vw;
 }
 
-.nav-menu {
+.nav-menu { 
     width: 100%;
     margin: 20px 0;
+    background-color: aqua;
 }
 
 .nav-header {
     display: flex;
     justify-content: space-between;
-    margin: 0 20px 30px 10px;
+    margin: 0 15px 30px 20px;
+}
+
+.vet-logo {
+    display: none;
+}
+
+.nav-header button {
+    background-color: transparent;
+    border: none;
 }
 
 .nav-item {
     display: flex;
     align-items: center;
-    background-color: aqua;
-    margin: 0 15px 10px 10px;
-    padding: 15px 10px;
+    margin: 0 10px 15px;
+    padding: 10px;
+}
+
+.item-text {
+    display: none;
 }
 
 .nav-footer {
@@ -51,9 +64,8 @@ nav {
     justify-content: space-between;
     align-items: center;
     background-color: var(--light-green);
-    padding: 0 15px 0 10px;
+    padding: 0 20px 0 10px;
     height: 10vh;
-    width: 100%;
 }
 
 .user-info {
@@ -62,10 +74,14 @@ nav {
 }
 
 .user-info img {
+    display: none;
     width: 40px;
     height: 40px;
     border-radius: 25px;
-    margin-right: 10px;
+}
+
+.user-text {
+    display: none;
 }
 
 .user-info p:first-child {
