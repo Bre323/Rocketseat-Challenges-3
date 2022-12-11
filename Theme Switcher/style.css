@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+	--dark: #292C35;
+	--light: #F1F1F1;
+	--label: #111;
+}
+
+body {
+    background-color: var(--light);
+    transition: 0.5s;
+}
+
+.theme-button {
+    position: absolute;
+    top: 43%;
+    left: 44%;
+    height: 50px;
+    width: 150px;
+    background-color: var(--label);
+    border-radius: 25px;
+    padding: 5px;
+}
+
+.moon-img {
+    position: absolute;
+    top: 12px;
+    left: 13px;
+}
+
+.sun-img {
+    position: absolute;
+    top: 12px;
+    left: 117px;
+}
+
+.ball {
+    position: absolute;
+    /*left: 105px;*/
+    height: 40px;
+    width: 40px;
+    background-color: #F1F1F1;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: 0.6s; 
+}
