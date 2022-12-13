@@ -10,3 +10,123 @@
     --gray: #828799;
     --page-background: #f9fbfc;
 }
+
+body {
+    font-family: 'Open Sans', Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.div-top {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    height: 50vh;
+    width: 100%;
+}
+
+header {
+    width: 40%;
+    text-align: center;
+    color: var(--page-background);
+}
+
+header h1 {
+    font-size: 2.25rem;
+    font-weight: 700;
+    line-height: 4rem;
+    margin: 5% auto 2%;
+}
+
+.div-bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: var(--page-background);
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+    gap: 1.25rem;
+}
+
+.plan {
+    height: 75vh;
+    width: 30vw;
+    background-color: var(--page-background);
+    border-radius: 10px;
+    box-shadow: var(--gray) 1px 1px 3px;
+}
+
+.value {
+    margin: 7%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid var(--gray);
+}
+
+.value .title {
+    font-weight: 700;
+    margin-bottom: 7%;
+}
+
+.value h2 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.value .description {
+    margin-top: 5%;
+}
+
+.small {
+    font-size: 1rem;
+}
+
+.gray-color {
+    color: var(--gray);
+}
+
+.feature-div {
+    display: flex;
+    margin: 0 7% 5%;
+    gap: 5%;
+}
+
+.feature-div p {
+    font-weight: 700;
+}
+
+.sign-plan {
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.sign-plan button {
+    width: 100%;
+    font-weight: 700;
+    border: 2px solid var(--blue);
+    border-radius: 10px;
+    color: var(--blue);
+    background-color: var(--page-background);
+    transition: 0.3s;
+}
+
+.sign-plan button:hover {
+    color: var(--page-background);
+    background-color: var(--blue);
+}
