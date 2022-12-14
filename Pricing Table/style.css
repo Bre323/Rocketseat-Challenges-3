@@ -58,7 +58,6 @@ header h1 {
 
 main {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
     margin: 0 auto;
     gap: 1.25rem;
@@ -137,4 +136,70 @@ main {
 
 .sign-plan button:hover {
     transform: scale(0.9);
+}
+
+
+/* POPULAR PLAN */
+
+.popular-plan {
+    height: 80vh;
+    min-height: 560px;
+    min-width: 300px;
+    margin-top: -110px;
+}
+
+.popular-plan .value {
+    margin: 0;
+    padding-bottom: 0;
+    border: none;
+}
+
+.popular-plan .value h2{
+    margin: 5% 7%;
+}
+
+.popular-plan .value .description {
+    margin: 0 7% 7%;
+    padding-bottom: 5%;
+    border-bottom: 1px solid var(--gray);
+}
+
+.popular-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    background-color: var(--yellow);
+    border-radius: 10px 10px 0 0;
+    padding: 7% 7% 3%;
+}
+
+.popular-div .title {
+    font-size: 1.2rem;
+    color: var(--blue);
+}
+
+.popular-plan .features {
+    height: 27%;
+    margin-bottom: 45px;
+}
+
+.border {
+    display: flex;
+    justify-content: center;
+    height: 35px;
+    width: 100px;
+    padding: 8px 0;
+    font-size: 0.8rem;
+    border-radius: 25px;
+    background-color: var(--blue);
+    color: var(--page-background);
+}
+
+.sign-plan .popular-button {
+    color: var(--page-background);
+    background-color: var(--blue);
+}
+
+footer {
+    margin: 50px 0 10px;
 }
