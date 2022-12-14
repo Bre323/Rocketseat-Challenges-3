@@ -25,15 +25,17 @@ body {
 .div-top {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     background-color: var(--blue);
+    min-height: 350px;
     height: 50vh;
     width: 100%;
 }
 
 header {
+    min-width: 400px;
     width: 40%;
+    margin: 3%;
     text-align: center;
     color: var(--page-background);
 }
@@ -65,6 +67,9 @@ main {
 .plan {
     height: 75vh;
     width: 30vw;
+    min-height: 550px;
+    min-width: 290px;
+    margin-top: -100px;
     background-color: var(--page-background);
     border-radius: 10px;
     box-shadow: var(--gray) 1px 1px 3px;
@@ -98,9 +103,13 @@ main {
     color: var(--gray);
 }
 
+.features {
+    height: 38%;
+}
+
 .feature-div {
     display: flex;
-    margin: 0 7% 5%;
+    margin: 5% 7% 0;
     gap: 5%;
 }
 
@@ -113,7 +122,7 @@ main {
     justify-content: center;
     height: 10%;
     width: 80%;
-    margin: 0 auto;
+    margin: 5% auto 0;
 }
 
 .sign-plan button {
@@ -127,6 +136,5 @@ main {
 }
 
 .sign-plan button:hover {
-    color: var(--page-background);
-    background-color: var(--blue);
+    transform: scale(0.9);
 }
