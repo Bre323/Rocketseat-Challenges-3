@@ -11,3 +11,28 @@
     --form-background: #24221f;
     --primary-color: #ffc632;
 }
+
+.container {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.login-div {
+    background-color: var(--background);
+    width: 50%;
+}
+
+.login-div img {
+    margin: 30px;
+}
+
+.image-div {
+    width: 50%;
+}
+
+.image-div img {
+    height: 100%;
+    width: 100%;
+}
