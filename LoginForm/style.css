@@ -216,3 +216,28 @@ a {
     height: 100%;
     width: 100%;
 }
+
+@media only screen and (max-width: 590px) {
+    .image-div {
+        display: none;
+        visibility: 0;
+    }
+
+    .login-div {
+        width: 100%;
+    }
+
+    .login-content {
+        background-color: var(--background);
+    }
+
+    .form-div .form-input {
+        background-color: var(--background);
+    }
+}
+
+@media only screen and (max-width: 590px) and (min-height: 680px) {
+    .login-content {
+        margin-bottom: 150px;
+    }
+}
