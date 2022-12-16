@@ -80,7 +80,53 @@ form {
     border: 1px solid var(--text-base);
     border-radius: 5px;
     margin-top: 5px;
-    padding: 10px;
+    padding: 10px 0 10px 30px;
+}
+
+input[type=email] {
+    background-image: url('./images/mail.svg');
+}
+
+input[type=password] {
+    background-image: url('./images/lock.svg');
+}
+
+input[type=email], input[type=password] {
+    background-repeat: no-repeat;
+    background-size: 20px;
+    background-position: 5px;
+    outline: none;
+}
+
+input[type=email]:focus{
+    background-image: url('./images/mail-focus.svg');
+    border: 2px solid var(--primary-color);
+}
+
+input[type=password]:focus {
+    background-image: url('./images/lock-focus.svg');
+    border: 2px solid var(--primary-color);
+}
+
+input[type=password]:focus ~ .eye-icon {
+    background-image: url('./images/eye.svg');
+}
+
+.password-div {
+    position: relative;
+    width: 265px;
+    height: 35px;
+}
+
+.eye-icon {
+    position: absolute;
+    background-image: url('./images/eye.svg');
+    background-repeat: no-repeat;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    margin-top: 10px;
+    right: 10px;
 }
 
 .remember-div {
@@ -93,6 +139,7 @@ a {
     font-weight: 500;
     color: var(--primary-color);
     text-decoration: none;
+    margin-top: 2.5px;
 }
 
 .remember-checkbox {
@@ -106,6 +153,41 @@ a {
     border: 2px solid var(--text-base);
 }
 
+.checkbox-label {
+    position: relative;
+    padding-left: 25px;
+}
+
+.checkbox-label input {
+    display: none;
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+    border-radius: 5px;
+}
+
+.checkbox-label .checkmark {
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: var(--form-background);
+    border: 2px solid var(--text-base);
+    border-radius: 5px;
+}
+
+.checkbox-label:hover .checkmark {
+    background-color: var(--background);
+}
+
+.checkbox-label input:checked ~ .checkmark {
+    background-image: url('./images/check.svg');
+    background-repeat: no-repeat;
+    background-color: var(--primary-color);
+    border: 2px solid var(--primary-color);
+}
+
 .bt-div {
     display: flex;
     flex-direction: column;
@@ -113,7 +195,7 @@ a {
     margin-top: 15px;
 }
 
-.bt-div button {
+.bt-div .enter {
     font-family: 'Roboto', sans-serif;
     font-weight: 500;
     height: 45px;

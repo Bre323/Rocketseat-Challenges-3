@@ -30,19 +30,24 @@
                     </div>
                     <div class="form-div">
                         <label for="Senha">Senha</label><br>
-                        <input class="form-input" id="password" type="password" placeholder="Digite sua senha">
+                        <div class="password-div">
+                            <input class="form-input" id="password" type="password" placeholder="Digite sua senha">
+                            <span class="eye-icon"></span>
+                        </div>
                     </div>
 
                     <div class="remember-div">
                         <div class="remember-checkbox">
-                            <input id="remember" type="checkbox">
-                            <label for="remember"> Lembre-me</label>
+                            <label class="checkbox-label">
+                                <input id="remember" type="checkbox"> Lembre-me
+                                <span class="checkmark"></span>
+                            </label>
                         </div>
                         <a href="#">Esqueci minha senha</a>
                     </div>
 
                     <div class="bt-div">
-                        <button>ENTRAR</button>
+                        <input class="enter" type="button" value="ENTRAR">
                         <p>Não tem uma conta? <a href="#">Registre-se</a></p>
                     </div>
                 </form>
