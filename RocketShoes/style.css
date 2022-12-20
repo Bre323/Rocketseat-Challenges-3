@@ -37,7 +37,7 @@ header {
 nav .menu {
     display: flex;
     justify-content: space-between;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 700;
     padding: 10px;
     width: 700px;
@@ -68,4 +68,39 @@ header .search::placeholder {
     height: 30px;
     width: 30px;
     margin: 0 40px;
+}
+
+aside {
+    height: 450px;
+    width: 440px;
+    padding: 10px 50px;
+}
+
+.product-info {
+    height: 430px;
+    width: 325px;
+}
+
+.product-info h1 {
+    font-size: 50px;
+}
+
+.product-info p {
+    margin-top: 15px;
+    color: var(--text-description);
+}
+
+.product-info h2 {
+    margin-top: 20px;
+    font-size: 40px;
+}
+
+.product-info button {
+    width: 200px;
+    height: 50px;
+    margin-top: 15px;
+    font-weight: 700;
+    background-color: var(--button);
+    color: var(--background);
+    border: none;
 }
