@@ -15,4 +15,57 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--background);
+    color: var(--text);
+    height: 100vh;
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.logo {
+    height: 50px;
+    width: 35px;
+    margin: 0 40px;
+}
+
+nav .menu {
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px;
+    width: 700px;
+}
+
+.menu-item {
+    list-style: none;
+    cursor: pointer;
+}
+
+header .search {
+    height: 35px;
+    width: 200px;
+    margin: 5px 0 0 30px;
+    border: none;
+    border-radius: 5px;
+}
+
+header .search::placeholder {
+    padding-left: 40px;
+    background-image: url('./rshoes-assets/icon-search.svg');
+    background-repeat: no-repeat;
+    background-size: 18px;
+    background-position: 12px;
+}
+
+.bag-icon {
+    height: 30px;
+    width: 30px;
+    margin: 0 40px;
 }
