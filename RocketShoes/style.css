@@ -32,6 +32,7 @@ header {
     height: 50px;
     width: 35px;
     margin: 0 40px;
+    cursor: pointer;
 }
 
 nav .menu {
@@ -68,6 +69,7 @@ header .search::placeholder {
     height: 30px;
     width: 30px;
     margin: 0 40px;
+    cursor: pointer;
 }
 
 aside {
@@ -103,4 +105,48 @@ aside {
     background-color: var(--button);
     color: var(--background);
     border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.product-info button:hover {
+    transform: scale(0.98);
+    color: var(--text);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+    width: 800px;
+    margin-top: -600px;
+    background-color: var(--main-background);
+    float: right;
+}
+
+main .tenis-photo {
+    height: 45%;
+    width: 350px;
+    margin-top: 150px;
+}
+
+main .galery {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 96%;
+    margin: 0 2%;
+}
+
+main .galery img {
+    height: 120px;
+    width: 210px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+main .galery img:hover {
+    border-bottom: 3px solid var(--button);
 }
