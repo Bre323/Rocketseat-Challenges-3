@@ -150,3 +150,38 @@ main .galery img {
 main .galery img:hover {
     border-bottom: 3px solid var(--button);
 }
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+}
+
+footer img {
+    width: 180px;
+    height: 100px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
+    list-style: none;
+    font-weight: 700;
+}
+
+footer .explore-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--footer);
+    width: 300px;
+    height: 100px;
+}
+
+footer .explore-link a {
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--background);
+}
