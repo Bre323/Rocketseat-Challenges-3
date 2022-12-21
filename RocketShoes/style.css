@@ -26,6 +26,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px 0;
+    min-width: 870px;
 }
 
 .logo {
@@ -75,7 +76,8 @@ header .search::placeholder {
 aside {
     height: 450px;
     width: 440px;
-    padding: 10px 50px;
+    min-width: 420px;
+    padding: 0 50px;
 }
 
 .product-info {
@@ -88,19 +90,19 @@ aside {
 }
 
 .product-info p {
-    margin-top: 15px;
+    margin-top: 10px;
     color: var(--text-description);
 }
 
 .product-info h2 {
-    margin-top: 20px;
+    margin-top: 15px;
     font-size: 40px;
 }
 
 .product-info button {
     width: 200px;
     height: 50px;
-    margin-top: 15px;
+    margin-top: 10px;
     font-weight: 700;
     background-color: var(--button);
     color: var(--background);
@@ -121,6 +123,7 @@ main {
     flex-direction: column;
     height: 600px;
     width: 800px;
+    min-width: 780px;
     margin-top: -600px;
     background-color: var(--main-background);
     float: right;
@@ -161,6 +164,7 @@ footer {
 footer img {
     width: 180px;
     height: 100px;
+    cursor: pointer;
 }
 
 footer ul {
@@ -171,6 +175,10 @@ footer ul {
     font-weight: 700;
 }
 
+footer ul .footer-items {
+    cursor: pointer;
+}
+
 footer .explore-link {
     display: flex;
     justify-content: center;
@@ -178,10 +186,16 @@ footer .explore-link {
     background-color: var(--footer);
     width: 300px;
     height: 100px;
+    gap: 15px;
 }
 
 footer .explore-link a {
     font-weight: 700;
     text-decoration: none;
     color: var(--background);
+}
+
+footer .explore-link img {
+    height: 25px;
+    width: 25px;
 }
