@@ -12,3 +12,10 @@
     --light-purple: #fbf6ff;
     --green: #4fff4b;
 }
+
+.top-div {
+    background-color: var(--purple-bg);
+    width: 100%;
+    height: 50vh;
+    border-bottom: 4px solid var(--green);
+}
