@@ -147,6 +147,46 @@ header nav ul {
     margin-top: 2px;
 }
 
- .top-content-img {
+.top-content-img {
     width: 45%;
- }
+}
+
+.bottom-div {
+    width: 100%;
+    min-width: 965px;
+    padding: 50px 80px;
+}
+
+.bottom-div h2 {
+    color: var(--purple-bg);
+    font-size: 24px;
+}
+
+.mid-content {
+    display: flex;
+    justify-content: space-between;
+    color: var(--dark-bg);
+}
+
+.mid-post {
+    display: flex;
+    flex-direction: column;
+    gap: 12.5px;
+    width: 47%;
+}
+
+.mid-related {
+    width: 43%;
+}
+
+.mid-related div {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.mid-related div:first-child {
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 1px solid var(--light-purple);
+}
