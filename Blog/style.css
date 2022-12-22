@@ -166,6 +166,7 @@ header nav ul {
     display: flex;
     justify-content: space-between;
     color: var(--dark-bg);
+    margin-bottom: 65px;
 }
 
 .mid-post {
