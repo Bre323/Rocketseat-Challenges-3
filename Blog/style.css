@@ -76,15 +76,40 @@ header nav ul {
 .search input {
     height: 100%;
     width: 75%;
-    padding-left: 25px;
+    padding: 0 25px;
     background-color: var(--dark-bg);
-    border: none;
+    outline: none;
+    border: 1px solid var(--dark-bg);
     border-radius: 5px 0 0 5px;
+    color: var(--light-purple);
 }
 
 .search input::placeholder {
     color: var(--light-purple);
 }
+
+
+/* ------ LIMPANDO O 'X' DO INPUT DE BUSCA ------ */
+.search input::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0; 
+}
+
+.search input::-ms-reveal { 
+    display: none; 
+    width: 0; 
+    height: 0; 
+}
+
+.search input::-webkit-search-decoration,
+.search input::-webkit-search-cancel-button,
+.search input::-webkit-search-results-button,
+.search input::-webkit-search-results-decoration {
+    display: none; 
+}
+/* ---------------------------------------------- */
+
 
 .search button {
     height: 100%;
