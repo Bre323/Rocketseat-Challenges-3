@@ -17,6 +17,7 @@ body {
     font-family: 'Manrope', serif;
     background-color: var(--background);
     color: var(--text-color);
+    min-width: 850px;
 }
 
 .blur-1, .blur-2 {
@@ -76,4 +77,27 @@ nav .menu .menu-items:hover {
 .coffee-button:hover {
     color: var(--background);
     background-color: var(--button);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+section div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
+}
+
+section div h2 {
+    font-size: 80px;
+}
+
+section div h2:last-child {
+    color: transparent;
+    text-shadow: 2px 4px 4px var(--button);
 }
