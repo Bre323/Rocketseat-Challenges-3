@@ -5,7 +5,7 @@
 }
 
 :root {
-    --backgrond: #000;
+    --background: #000;
     --text-color: #FFF;
     --button: #8257E5;
     --border: #29292E;
@@ -15,12 +15,14 @@
 
 body {
     font-family: 'Manrope', serif;
-    background-color: var(--backgrond);
+    background-color: var(--background);
+    color: var(--text-color);
 }
 
 .blur-1, .blur-2 {
     position: fixed;
     width: 45%;
+    z-index: -1;
 }
 
 .blur-1 {
@@ -31,4 +33,47 @@ body {
 .blur-2 {
     top: 0;
     right: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 40px;
+}
+
+nav {
+    margin-left: 10px;
+    padding: 10px;
+}
+
+nav .menu {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+nav .menu .menu-items {
+    cursor: pointer;
+}
+
+nav .menu .menu-items:hover {
+    font-weight: 700;
+}
+
+.coffee-button {
+    height: 50px;
+    width: 200px;
+    font-weight: 700;
+    border: 2px solid var(--button);
+    border-radius: 10px;
+    color: var(--text-color);
+    background-color: transparent;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.coffee-button:hover {
+    color: var(--background);
+    background-color: var(--button);
 }
