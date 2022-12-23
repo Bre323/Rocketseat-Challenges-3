@@ -15,4 +15,20 @@
 
 body {
     font-family: 'Manrope', serif;
+    background-color: var(--backgrond);
+}
+
+.blur-1, .blur-2 {
+    position: fixed;
+    width: 45%;
+}
+
+.blur-1 {
+    bottom: 0;
+    left: 0;
+}
+
+.blur-2 {
+    top: 0;
+    right: 0;
 }
