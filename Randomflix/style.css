@@ -82,3 +82,34 @@ body {
     width: 27.5%;
     color: var(--subtitle);
 }
+
+
+/* Div do filme em exibição */
+
+#movie {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.movie-info {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.movie-info img {
+    height: 275px;
+    width: 200px;
+}
+
+.movie-info .description {
+    padding: 10px 15px 0;
+    width: 750px;
+    color: var(--title);
+}
+
+.movie-info .description h2 {
+    margin-bottom: 20px;
+}
