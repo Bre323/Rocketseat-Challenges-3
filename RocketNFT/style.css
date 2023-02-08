@@ -16,9 +16,14 @@
 
 .container {
     width: 100%;
+    min-width: 585px;
     background-color: var(--body-background);
     color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
+}
+
+span {
+    color: var(--color-logo);
 }
 
 .top-content {
@@ -77,4 +82,45 @@ header button:hover {
 
 header button:active {
     transform: scale(0.97);
+}
+
+.top-content main {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 70px;
+    padding: 0 50px;
+}
+
+.about > p {
+    width: 385px;
+    margin-bottom: 50px;
+    font-size: 18px;
+}
+
+.about .selected-artists {
+    display: flex;
+    align-items: flex-end;
+    gap: 7px;
+}
+
+.selected-artists-text > p {
+    margin-bottom: 5px;
+}
+
+.discover-more {
+    width: 380px;
+    line-height: 40px;
+}
+
+.gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px 15px;
+}
+
+.gallery img {
+    width: 270px;
+    height: 160px;
+    border: 1px solid #fff;
 }
