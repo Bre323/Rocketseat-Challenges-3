@@ -20,6 +20,7 @@
     background-color: var(--body-background);
     color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
+    scroll-behavior: smooth;
 }
 
 span {
@@ -327,4 +328,132 @@ header button:active {
     height: 15px;
     width: 30px;
     padding-left: 15px;
+}
+
+footer {
+    height: 600px;
+    display: grid;
+    grid-template-rows: 32% 48% 20%;
+    grid-template-columns: 450px 1fr;
+    grid-template-areas: 
+    "head head"
+    "news nav"
+    "media media";
+    background-color: var(--card-color);
+}
+
+.rocket-nft {
+    grid-area: head;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    border-bottom: 1px solid var(--subtitle-color);
+}
+
+.rocket-nft > .footer-arrow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+    width: 70px;
+    background-color: var(--color-logo);
+    cursor: pointer;
+}
+
+.news {
+    grid-area: news;
+    padding: 40px 50px 0;
+    border-bottom: 1px solid var(--subtitle-color);
+    border-right: 1px solid var(--subtitle-color);
+}
+
+.news > h3 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.news > form {
+    display: flex;
+    height: 45px;
+    width: 100%;
+}
+
+.news > form > input {
+    width: 75%;
+    background-color: var(--color-input);
+    padding: 0 15px;
+    font-family: 'Montserrat', sans-serif;
+    color: var(--text-color);
+    border: none;
+}
+
+.news > form > input:focus {
+    outline: none;
+}
+
+.news > form > button {
+    width: 25%;
+    background-color: var(--text-color);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    border: none;
+}
+
+.news > form > button:hover {
+    opacity: 0.8;
+}
+
+.news > form > button:active {
+    opacity: 0.7;
+}
+
+.footer-nav {
+    grid-area: nav;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--subtitle-color);
+}
+
+.footer-nav > .links {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 70px 0;
+}
+
+.footer-nav > .links > p {
+    font-weight: 700;
+}
+
+.footer-nav > .links > a {
+    text-decoration: none;
+    color: var(--subtitle-color);
+}
+
+.media {
+    grid-area: media;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 60px 0;
+}
+
+.media > p {
+    color: var(--subtitle-color);
+}
+
+.media > nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 250px;
+}
+
+.media > nav > img {
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
 }
