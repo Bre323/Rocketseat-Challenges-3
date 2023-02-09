@@ -16,7 +16,7 @@
 
 .container {
     width: 100%;
-    min-width: 585px;
+    min-width: 1000px;
     background-color: var(--body-background);
     color: var(--text-color);
     font-family: 'Montserrat', sans-serif;
@@ -88,6 +88,7 @@ header button:active {
     display: flex;
     justify-content: space-between;
     margin-bottom: 70px;
+    gap: 15px;
     padding: 0 50px;
 }
 
@@ -120,7 +121,69 @@ header button:active {
 }
 
 .gallery img {
-    width: 270px;
-    height: 160px;
+    width: 21.5%;
+    height: 11.5%;
     border: 1px solid #fff;
+}
+
+.info {
+    /*background-color: #ff5b50;*/
+    display: grid;
+    grid-template-rows: 55% 1fr;
+    grid-template-columns: 250px 1fr;
+    grid-template-areas: 
+    "stats text text"
+    "stats banner banner";
+    height: 600px;
+}
+
+.info > .stats {
+    grid-area: stats;
+    text-align: center;
+    height: 100%;
+    padding: 140px 0;
+    border-right: 1px solid #5A5757;
+    border-bottom: 1px solid #5A5757;
+}
+
+.stats h2 {
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+
+.stats p {
+    color: var(--subtitle-color);
+}
+
+.stats p:not(p:last-child) {
+    margin-bottom: 30px;
+}
+
+.info > .info-text {
+    grid-area: text;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.info-text .text-div {
+    width: 350px;
+}
+
+.text-div p {
+    margin-bottom: 50px;
+}
+
+.text-div p > a {
+    color: var(--color-logo);
+}
+
+.text-div > a {
+    color: var(--text-color);
+}
+
+.info > img {
+    grid-area: banner;
+    width: 100%;
+    height: 100%;
 }
