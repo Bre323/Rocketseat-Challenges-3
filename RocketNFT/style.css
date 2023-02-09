@@ -127,7 +127,6 @@ header button:active {
 }
 
 .info {
-    /*background-color: #ff5b50;*/
     display: grid;
     grid-template-rows: 55% 1fr;
     grid-template-columns: 250px 1fr;
@@ -186,4 +185,81 @@ header button:active {
     grid-area: banner;
     width: 100%;
     height: 100%;
+}
+
+.popular {
+    padding: 150px 50px;
+}
+
+.popular h2 {
+    font-size: 2.25rem;
+    margin-bottom: 100px;
+}
+
+.astronauts {
+    display: flex;
+    justify-content: space-between;
+    height: 640px;
+}
+
+.astronauts .left-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 49%;
+}
+
+.astronauts .right-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 50%;
+    border-left: 1px solid #5A5757;
+}
+
+.astronaut {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 290px;
+    width: 345px;
+}
+
+.astronaut .text-and-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.text-and-image h3 {
+    font-weight: 500;
+    font-size: 1.5rem;
+}
+
+.text-and-image img {
+    height: 23px;
+    width: 23px;
+}
+
+.astronaut .name-and-value {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.astronaut-name {
+    font-weight: 600;
+    color: var(--subtitle-color);
+}
+
+.astronaut-value {
+    font-weight: 500;
+    font-size: 20px;
+    color: var(--color-logo);
+}
+
+.astronaut > img {
+    width: 100%;
 }
