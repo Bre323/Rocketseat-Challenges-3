@@ -37,7 +37,7 @@ header {
     padding: 35px 50px 90px;
 }
 
-header img {
+.logo {
     width: 230px;
     height: 35px;
 }
@@ -262,4 +262,69 @@ header button:active {
 
 .astronaut > img {
     width: 100%;
+}
+
+.best-artists {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+
+.best-artists > h2 {
+    text-align: center;
+    font-size: 2.25rem;
+    margin-bottom: 100px;
+}
+
+.artists > .top-div,
+.artists > .bottom-div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 50px 50px;
+}
+
+.artist {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 290px;
+    height: 125px;
+    background-color: var(--card-color);
+    transition: 0.3s;
+}
+
+.artist > img {
+    height: 80px;
+    width: 80px;
+}
+
+.artist-text .name {
+    margin-bottom: 10px;
+}
+
+.artist-text .value {
+    color: var(--color-logo);
+}
+
+.artist:hover {
+    background-color: var(--color-logo);
+    color: var(--text-color);
+}
+
+.artist:hover .value {
+    color: var(--text-color);
+}
+
+.best-artists > a {
+    color: var(--text-color);
+    text-decoration: none;
+    text-align: center;
+}
+
+.best-artists > a > img {
+    height: 15px;
+    width: 30px;
+    padding-left: 15px;
 }
