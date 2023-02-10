@@ -17,9 +17,9 @@
                 <img class="logo" src="./assets/logo.svg" alt="Rocket NFT Logo">
 
                 <nav>
-                    <a href="#">Comprar NFT</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">FAQ</a>
+                    <a href="">Comprar NFT</a>
+                    <a href="">Sobre</a>
+                    <a href="">FAQ</a>
                 </nav>
 
                 <button type="button">
@@ -242,7 +242,7 @@
             <div class="rocket-nft">
                 <img class="logo" src="./assets/logo.svg" alt="RocketNFTs logo">
 
-                <div class="footer-arrow">
+                <div class="footer-arrow" onclick="goTop()">
                     <img src="./assets/arrow-black.svg" alt="Arrow black">
                 </div>
             </div>
@@ -250,35 +250,35 @@
             <div class="news">
                 <h3>Fique por dentro de <span>todas as novidades</span></h3>
 
-                <form action="POST">
-                    <input type="email" placeholder="nft@rocketseat.com.br">
-                    <button type="submit">Enviar</button>
+                <form>
+                    <input type="email" value="email" id="email" placeholder="nft@rocketseat.com.br" required>
+                    <button type="submit" onclick="sendEmail()">Enviar</button>
                 </form>
             </div>
 
             <nav class="footer-nav">
                 <div class="links">
                     <p>Empresas</p>
-                    <a href="#">Sobre</a>
-                    <a href="#">Serviços</a>
-                    <a href="#">Time</a>
-                    <a href="#">Carreira</a>
+                    <a href="">Sobre</a>
+                    <a href="">Serviços</a>
+                    <a href="">Time</a>
+                    <a href="">Carreira</a>
                 </div>
 
                 <div class="links">
                     <p>Mapa</p>
-                    <a href="#">Galeria</a>
-                    <a href="#">Populares</a>
-                    <a href="#">Vendas</a>
-                    <a href="#">Contato</a>
+                    <a href="">Galeria</a>
+                    <a href="">Populares</a>
+                    <a href="">Vendas</a>
+                    <a href="">Contato</a>
                 </div>
 
                 <div class="links">
                     <p>Links</p>
-                    <a href="#">FAQs</a>
-                    <a href="#">Termos</a>
-                    <a href="#">Política</a>
-                    <a href="#">Ajuda</a>
+                    <a href="">FAQs</a>
+                    <a href="">Termos</a>
+                    <a href="">Política</a>
+                    <a href="">Ajuda</a>
                 </div>
             </nav>
 
@@ -295,6 +295,7 @@
         </footer>
     </div>
 
+    <script src="https://unpkg.com/scrollreveal"></script>
     <script src="./main.js"></script>
 </body>
 </html>
