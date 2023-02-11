@@ -460,3 +460,20 @@ footer {
     height: 30px;
     width: 30px;
 }
+
+
+@media only screen and (max-width: 515px) {
+    .container {
+        width: 100%;
+        max-width: 260px;
+    }
+
+    main .badge {
+        display: none;
+    }
+
+    .gallery img {
+        width: 25%;
+        height: 15%;
+    }
+}
